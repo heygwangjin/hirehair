@@ -15,16 +15,3 @@
 		{@render layout_children()}
 	{/snippet}
 </Shell>
-
-<style>
-	@font-face {
-		display: swap;
-		font-family: 'Pretendard';
-		src: url('$lib/fonts/PretendardVariable.woff2');
-		font-weight: 45 920;
-	}
-
-	:root {
-		font-family: 'Pretendard', sans-serif;
-	}
-</style>
