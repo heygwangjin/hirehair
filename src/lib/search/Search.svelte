@@ -25,7 +25,7 @@
 	}}
 />
 
-<div class="search-container {$searching && 'searching'}">
+<div class="search-container {$searching ? 'searching' : ''}">
 	<input
 		bind:this={search_input}
 		onfocusin={() => {
@@ -52,20 +52,19 @@
 		justify-content: space-between;
 		padding: 0 0.4rem;
 		width: 16rem;
-		border: 1px solid var(--back-3);
+		border: 1px solid var(--hh-input);
 		border-radius: var(--radius);
 	}
 
 	.searching {
-		border-color: var(--back-5);
-		border-width: 1.5px;
+		border-color: var(--hh-ring);
 	}
 
 	.search-input {
-		height: 2.3rem;
+		height: 2.5rem;
 		padding: 0.2rem 0.4rem;
-		border-radius: 0.5rem;
-		font-size: 0.9rem;
+		border-radius: var(--radius);
+		font-size: 0.875rem;
 
 		&:focus {
 			outline: none;

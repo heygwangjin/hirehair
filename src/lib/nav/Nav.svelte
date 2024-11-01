@@ -44,9 +44,9 @@ Top navigation bar for the application. It provides a slot for the left side, th
 		top: 0;
 		z-index: 101;
 		width: 100vw;
-		height: var(--nav-height);
+		height: var(--hh-nav-height);
 		margin: 0 auto;
-		padding: 0 var(--page-padding-side);
+		padding: 0 var(--hh-page-padding-side);
 		background-color: hsl(0, 0%, 100%);
 		user-select: none;
 		isolation: isolate;
@@ -73,8 +73,14 @@ Top navigation bar for the application. It provides a slot for the left side, th
 	}
 
 	.home-link {
-		font-size: 1.8rem;
-		font-family: serif;
+		font-size: 1.775rem;
+		font-family: 'Noto Serif', serif;
+	}
+
+	@media (min-width: 1024px) {
+		.home-link {
+			width: 9.2rem;
+		}
 	}
 
 	.links {
@@ -84,7 +90,7 @@ Top navigation bar for the application. It provides a slot for the left side, th
 		gap: 1rem;
 
 		a {
-			color: var(--primary);
+			color: var(--hh-primary);
 			white-space: nowrap;
 			height: 100%;
 			display: flex;
@@ -95,19 +101,13 @@ Top navigation bar for the application. It provides a slot for the left side, th
 			font-weight: bold;
 
 			&:hover {
-				box-shadow: inset 0 -1px 0 0 var(--background);
+				box-shadow: inset 0 -1px 0 0 var(--hh-muted);
 			}
 
 			&[aria-current='page'] {
-				color: var(--primary);
+				color: var(--hh-primary);
 				box-shadow: inset 0 -1px 0 0 currentColor;
 			}
-		}
-	}
-
-	@media (min-width: 1024px) {
-		.home-link {
-			width: 9.2rem;
 		}
 	}
 </style>

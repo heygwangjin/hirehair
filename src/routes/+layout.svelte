@@ -6,6 +6,15 @@
 	let { data, children: layout_children } = $props();
 </script>
 
+<svelte:head>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet"
+	/>
+</svelte:head>
+
 <Shell>
 	{#snippet top_nav()}
 		<Nav title={data.nav_title} links={data.nav_links} />
