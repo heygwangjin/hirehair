@@ -73,8 +73,7 @@ Top navigation bar for the application. It provides a slot for the left side, th
 	}
 
 	.home-link {
-		font-size: 1.775rem;
-		font-family: 'Noto Serif', serif;
+		font: var(--hh-font-logo);
 	}
 
 	@media (min-width: 1024px) {

@@ -1,3 +1,13 @@
+@import '@fontsource/eb-garamond/400.css';
+@import '@fontsource/eb-garamond/500.css';
+@import '@fontsource/eb-garamond/400-italic.css';
+@import '@fontsource/atkinson-hyperlegible/400.css';
+@import '@fontsource/dm-serif-display/400.css';
+@import '@fontsource/dm-serif-display/400-italic.css';
+@import '@fontsource/fira-mono/400.css';
+@import '@fontsource/fira-sans/400.css';
+@import '@fontsource/noto-serif/700.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -39,6 +49,41 @@
 		--hh-page-padding-top: 6rem;
 		--hh-page-padding-bottom: 8rem;
 		--hh-page-padding-side: 1.6rem;
+
+		/* Typography */
+		--hh-font-family-ui: 'Fira Sans', -apple-system, sans-serif;
+		--hh-font-family-body: Georgia, serif;
+		--hh-font-family-heading: 'DM Serif Display', Georgia, serif;
+		--hh-font-family-mono: 'Fira Mono', monospace;
+		--hh-font-family-logo: 'Noto Serif', serif;
+
+		--hh-font-size-h1: 3.6rem;
+		--hh-font-size-h2: 3rem;
+		--hh-font-size-h3: 2.4rem;
+		--hh-font-size-body: 1.8rem;
+		--hh-font-size-logo: 1.775rem;
+		--hh-font-size-body-small: 1.6rem;
+		--hh-font-size-ui-small: 1.3rem;
+		--hh-font-size-ui-medium: 1.6rem;
+		--hh-font-size-ui-large: 3rem;
+		--hh-font-size-mono: 1.4rem;
+
+		/* doing it this way (rather than just `1.5`) means it has a unit, and can be used elsewhere */
+		--hh-line-height-body: calc(1.5 * var(--hh-font-size-body));
+		--hh-line-height-body-small: calc(1.5 * var(--hh-font-size-body-small));
+
+		--hh-font-h1: 500 var(--hh-font-size-h1) / 1.2 var(--hh-font-family-heading);
+		--hh-font-h2: 500 var(--hh-font-size-h2) / 1.2 var(--hh-font-family-heading);
+		--hh-font-h3: 500 var(--hh-font-size-h3) / 1.2 var(--hh-font-family-heading);
+		--hh-font-body: 400 var(--hh-font-size-body) / var(--hh-line-height-body)
+			var(--hh-font-family-body);
+		--hh-font-body-small: 400 var(--hh-font-size-body-small) / var(--hh-line-height-body)
+			var(--hh-font-family-body);
+		--hh-font-ui-small: 400 var(--hh-font-size-ui-small) / 1.5 var(--hh-font-family-ui);
+		--hh-font-ui-medium: 400 var(--hh-font-size-ui-medium) / 1.5 var(--hh-font-family-ui);
+		--hh-font-ui-large: 400 var(--hh-font-size-ui-large) / 1.5 var(--hh-font-family-ui);
+		--hh-font-mono: 400 var(--hh-font-size-mono) / 1.7 var(--hh-font-family-mono);
+		--hh-font-logo: 700 var(--hh-font-size-logo) / 1 var(--hh-font-family-logo);
 
 		--hh-background: hsl(0, 0%, 100%);
 		--hh-foreground: hsl(222.2, 84%, 4.9%);
