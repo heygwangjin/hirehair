@@ -32,6 +32,20 @@
 		--sidebar-accent-foreground: 240 5.9% 10%;
 		--sidebar-border: 220 13% 91%;
 		--sidebar-ring: 217.2 91.2% 59.8%;
+
+		/* Dimensions */
+		--nav-height: 4rem;
+		--secondary-nav-height: 5rem;
+		--page-padding-top: 6rem;
+		--page-padding-bottom: 8rem;
+		--page-padding-side: 1.6rem;
+
+		/* background colors */
+		--back-1: hsl(0, 0%, 100%);
+		--back-2: hsl(0, 0%, 95%);
+		--back-3: hsl(0, 0%, 88%);
+		--back-4: hsl(0, 0%, 78%);
+		--back-5: hsl(0, 0%, 70%);
 	}
 
 	.dark {

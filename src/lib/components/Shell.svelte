@@ -35,8 +35,10 @@ The main shell of the application. It provides a slot for the top navigation, th
 
 	@media (min-width: 1024px) {
 		main {
-			padding-top: 6rem;
-			padding-bottom: 0;
+			padding-top: var(--page-padding-top);
+			padding-bottom: var(--page-padding-bottom);
+			padding-left: var(--page-padding-side);
+			padding-right: var(--page-padding-side);
 		}
 	}
 </style>
