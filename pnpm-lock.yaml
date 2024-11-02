@@ -27,19 +27,7 @@ importers:
         specifier: ^0.454.0
         version: 0.454.0(svelte@5.1.6)
     devDependencies:
-      '@fontsource/atkinson-hyperlegible':
-        specifier: ^5.1.0
-        version: 5.1.0
       '@fontsource/dm-serif-display':
-        specifier: ^5.1.0
-        version: 5.1.0
-      '@fontsource/eb-garamond':
-        specifier: ^5.1.0
-        version: 5.1.1
-      '@fontsource/fira-mono':
-        specifier: ^5.1.0
-        version: 5.1.0
-      '@fontsource/fira-sans':
         specifier: ^5.1.0
         version: 5.1.0
       '@fontsource/noto-serif':
@@ -590,20 +578,8 @@ packages:
     resolution: {integrity: sha512-CXtq5nR4Su+2I47WPOlWud98Y5Lv8Kyxp2ukhgFx/eW6Blm18VXJO5WuQylPugRo8nbluoi6GvvxBLqHcvqUUw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@fontsource/atkinson-hyperlegible@5.1.0':
-    resolution: {integrity: sha512-2qT7mpgHWYM0bB3+5zbcfy49PD5xil/8t3maXxdgFpJo2dFaD9qBgk5u72KgK7ZtmGOWbCjCoAk5e+vpOIqfvA==}
-
   '@fontsource/dm-serif-display@5.1.0':
     resolution: {integrity: sha512-8IGBpTOn2XRA09plE6iAlZajL09iwCdSTd60FiM9NsD7VV4Nqseo9tgqiZLyuLC9D1jht5i39I2IYI/o2+Q0Kg==}
-
-  '@fontsource/eb-garamond@5.1.1':
-    resolution: {integrity: sha512-fB/T2F+Hvic0f8AU1oZXc64OyWDrce5x01JUafnC+u2OSILMales+g4CtD02CPP7l9x2AydqD4yV/tK7YbKeMg==}
-
-  '@fontsource/fira-mono@5.1.0':
-    resolution: {integrity: sha512-6+nftSKApXyN0I9FC5GJuG5TUCh+in5OehtrXRIsHJvq38Pm//oA1kZZYNdXv99JYzLzJ3lzsTAavmS+xGLGDw==}
-
-  '@fontsource/fira-sans@5.1.0':
-    resolution: {integrity: sha512-qfAjF5WcrL6qQh9eIWLK7lOh9wbCgCnVWh2Nu2gozrTgsUgYBLR8sbCGYwlK1K0yZoQsR2i9VSiQ16wwPCBkSw==}
 
   '@fontsource/noto-serif@5.1.0':
     resolution: {integrity: sha512-C/rancPr6kcRGNAut7g8CAZNhB1kOWB6VRQDCo6ZoUnW2Mja962ZcrU0nD7nFeSMJiSeyX5phCrajMaUJE3SGg==}
@@ -2551,15 +2527,7 @@ snapshots:
     dependencies:
       levn: 0.4.1
 
-  '@fontsource/atkinson-hyperlegible@5.1.0': {}
-
   '@fontsource/dm-serif-display@5.1.0': {}
-
-  '@fontsource/eb-garamond@5.1.1': {}
-
-  '@fontsource/fira-mono@5.1.0': {}
-
-  '@fontsource/fira-sans@5.1.0': {}
 
   '@fontsource/noto-serif@5.1.0': {}
 

@@ -1,4 +1,5 @@
 @import '@fontsource/noto-serif/700.css';
+@import '@fontsource/dm-serif-display/400.css';
 
 @font-face {
 	display: swap;
@@ -53,27 +54,44 @@
 
 		/* Typography */
 		--hh-font-family-body: 'Pretendard', --apple-system, sans-serif;
-		--hh-font-family-heading: 'Noto Serif', Georgia, serif;
+		--hh-font-family-heading: 'DM Serif Display', Georgia, serif;
+		--hh-font-family-logo: 'Noto Serif', Georgia, serif;
 
 		--hh-font-size-h1: 3.6rem;
 		--hh-font-size-h2: 3rem;
 		--hh-font-size-h3: 2.4rem;
 		--hh-font-size-logo: 1.775rem;
+		--hh-font-size-body-large: 1.125rem;
 		--hh-font-size-body: 1rem;
 		--hh-font-size-body-small: 0.875rem;
 
 		/* doing it this way (rather than just `1.5`) means it has a unit, and can be used elsewhere */
+		--hh-line-height-body-large: calc(1.5 * var(--hh-font-size-body-large));
 		--hh-line-height-body: calc(1.5 * var(--hh-font-size-body));
 		--hh-line-height-body-small: calc(1.5 * var(--hh-font-size-body-small));
 
 		--hh-font-h1: 500 var(--hh-font-size-h1) / 1.2 var(--hh-font-family-heading);
 		--hh-font-h2: 500 var(--hh-font-size-h2) / 1.2 var(--hh-font-family-heading);
 		--hh-font-h3: 500 var(--hh-font-size-h3) / 1.2 var(--hh-font-family-heading);
-		--hh-font-logo: 700 var(--hh-font-size-logo) / 1 var(--hh-font-family-heading);
+		--hh-font-logo: 700 var(--hh-font-size-logo) / 1 var(--hh-font-family-logo);
+		--hh-font-body-large: 400 var(--hh-font-size-body-large) / var(--hh-line-height-body-large)
+			var(--hh-font-family-body);
 		--hh-font-body: 400 var(--hh-font-size-body) / var(--hh-line-height-body)
 			var(--hh-font-family-body);
-		--hh-font-body-small: 400 var(--hh-font-size-body-small) / var(--hh-line-height-body)
+		--hh-font-body-small: 400 var(--hh-font-size-body-small) / var(--hh-line-height-body-small)
 			var(--hh-font-family-body);
+
+		/* set at 1.75x so if you zoom +/-10% from common settings it won't switch your font */
+		@media (min-resolution: 1.75x) {
+			--hh-font-family-body: 'Pretendard', --apple-system, sans-serif;
+			--hh-font-size-body-large: 1.125rem;
+			--hh-font-size-body: 1rem;
+			--hh-font-size-body-small: 0.875rem;
+		}
+
+		@media screen and (min-width: 800px) {
+			--sk-font-size-h1: 5.4rem;
+		}
 
 		--hh-background: hsl(0, 0%, 100%);
 		--hh-foreground: hsl(222.2, 84%, 4.9%);
