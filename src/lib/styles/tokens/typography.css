@@ -10,7 +10,6 @@
 	--hh-font-family-ui: 'Fira Sans', -apple-system, sans-serif;
 	--hh-font-family-body: 'Pretendard', -apple-system, 'Noto Sans KR', sans-serif;
 	--hh-font-family-heading: 'DM Serif Display', Georgia, serif;
-	--hh-font-family-logo: 'Noto Serif', Georgia, serif;
 
 	--hh-font-size-h1: 3.2rem;
 	--hh-font-size-h2: 2.6rem;
@@ -40,7 +39,7 @@
 	--hh-font-ui-small: 400 var(--hh-font-size-ui-small) / 1.5 var(--hh-font-family-ui);
 	--hh-font-ui-medium: 400 var(--hh-font-size-ui-medium) / 1.5 var(--hh-font-family-ui);
 	--hh-font-ui-large: 400 var(--hh-font-size-ui-large) / 1.5 var(--hh-font-family-ui);
-	--hh-font-logo: 700 var(--hh-font-size-logo) / 1 var(--hh-font-family-logo);
+	--hh-font-logo: 700 var(--hh-font-size-logo) / 1 var(--hh-font-family-body);
 
 	/* set at 1.75x so if you zoom +/-10% from common settings it won't switch your font */
 	@media (min-resolution: 1.75x) {
@@ -52,9 +51,5 @@
 
 	&.dark {
 		-webkit-font-smoothing: antialiased;
-	}
-
-	@media screen and (min-width: 1024px) {
-		--hh-font-size-h1: 3.2rem;
 	}
 }

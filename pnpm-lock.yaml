@@ -33,9 +33,6 @@ importers:
       '@fontsource/noto-sans-kr':
         specifier: ^5.1.0
         version: 5.1.0
-      '@fontsource/noto-serif':
-        specifier: ^5.1.0
-        version: 5.1.0
       '@playwright/test':
         specifier: ^1.45.3
         version: 1.48.2
@@ -589,9 +586,6 @@ packages:
 
   '@fontsource/noto-sans-kr@5.1.0':
     resolution: {integrity: sha512-Q0wGdwQm8GQ5D2OeEqssgWOv16FJwEmoTnwwOPeshvVgxGT83Uxak7jEXNbRqmMCLJNoPOdzYXadwYL+hvfx7A==}
-
-  '@fontsource/noto-serif@5.1.0':
-    resolution: {integrity: sha512-C/rancPr6kcRGNAut7g8CAZNhB1kOWB6VRQDCo6ZoUnW2Mja962ZcrU0nD7nFeSMJiSeyX5phCrajMaUJE3SGg==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -2536,8 +2530,6 @@ snapshots:
   '@fontsource/fira-sans@5.1.0': {}
 
   '@fontsource/noto-sans-kr@5.1.0': {}
-
-  '@fontsource/noto-serif@5.1.0': {}
 
   '@humanfs/core@0.19.1': {}
 
