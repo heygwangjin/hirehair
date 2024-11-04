@@ -17,7 +17,7 @@ Top navigation bar for the application. It provides a slot for the left side, th
 </script>
 
 <nav>
-	<a class="home-link" href="/" title={home_title} aria-label="HireHair">HireHair</a>
+	<a class="home-link" href="/" title={home_title} aria-label="HairPeople">헤어피플</a>
 
 	<div class="links">
 		{#each links as link}
