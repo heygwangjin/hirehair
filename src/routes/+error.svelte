@@ -16,22 +16,24 @@
 	<div class="inner">
 		{#if online}
 			{#if $page.status === 404}
-				<h1>Not Found!</h1>
+				<h1>Not found!</h1>
 				<p>요청하신 페이지를 찾을 수 없습니다.</p>
 				<p>
-					만약 해당 페이지가 존재해야 한다면, <a href="/qna"> 문의사항</a>을 남겨주세요!
+					해당 페이지가 존재해야 한다면, <br />
+					<a href="/qna"> 문의사항</a>을 남겨주세요!
 				</p>
 			{:else}
 				<h1>Yikes!</h1>
 
-				<p>서버 오류가 발생했습니다. 페이지를 새로고침해주세요.</p>
+				<p>서버 오류가 발생했습니다. <br /> 페이지를 새로고침해주세요.</p>
 				<p>
-					에러가 계속 발생한다면, <a href="/qna">문의사항</a>을 남겨주세요!
+					에러가 계속 발생한다면, <br />
+					<a href="/qna">문의사항</a>을 남겨주세요!
 				</p>
 			{/if}
 		{:else}
 			<h1>OFFLINE!</h1>
-			<p>인터넷 연결이 되면 페이지를 새로고침해주세요.</p>
+			<p>인터넷 연결이 되면, <br /> 페이지를 새로고침해주세요.</p>
 		{/if}
 	</div>
 </div>
@@ -54,16 +56,26 @@
 
 		a {
 			text-wrap: nowrap;
-			color: var(--hh-destructive);
 		}
 	}
 
 	p {
 		margin: 1em auto;
-		font: var(--hh-font-body-large);
+		font: var(--hh-font-body);
 	}
 
 	h1 {
-		font: var(--hh-font-h1);
+		font-weight: 500;
+		font-size: 4.2rem;
+	}
+
+	@media screen and (min-width: 1024px) {
+		p {
+			font: var(--hh-font-body-large);
+		}
+
+		h1 {
+			font-size: 5.4rem;
+		}
 	}
 </style>
