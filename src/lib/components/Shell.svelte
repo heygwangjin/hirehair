@@ -4,6 +4,7 @@ The main shell of the application. It provides a slot for the top navigation, th
 
 <script lang="ts">
 	import type { Snippet } from 'svelte';
+	import Icons from './Icons.svelte';
 
 	let {
 		nav_visible = true,
@@ -15,6 +16,8 @@ The main shell of the application. It provides a slot for the top navigation, th
 		children?: Snippet;
 	} = $props();
 </script>
+
+<Icons />
 
 {#if nav_visible}
 	{@render top_nav?.()}
