@@ -27,9 +27,9 @@
 	--hh-line-height-body-small: calc(1.5 * var(--hh-font-size-body-small));
 	--hh-line-height-body-large: calc(1.5 * var(--hh-font-size-body-large));
 
-	--hh-font-h1: 700 var(--hh-font-size-h1) / 1.2 var(--hh-font-family-heading);
-	--hh-font-h2: 700 var(--hh-font-size-h2) / 1.2 var(--hh-font-family-heading);
-	--hh-font-h3: 700 var(--hh-font-size-h3) / 1.2 var(--hh-font-family-heading);
+	--hh-font-h1: 700 var(--hh-font-size-h1) / 1.2 var(--hh-font-family-body);
+	--hh-font-h2: 700 var(--hh-font-size-h2) / 1.2 var(--hh-font-family-body);
+	--hh-font-h3: 700 var(--hh-font-size-h3) / 1.2 var(--hh-font-family-body);
 	--hh-font-body: 400 var(--hh-font-size-body) / var(--hh-line-height-body)
 		var(--hh-font-family-body);
 	--hh-font-body-small: 400 var(--hh-font-size-body-small) / var(--hh-line-height-body)

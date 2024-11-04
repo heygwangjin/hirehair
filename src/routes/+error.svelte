@@ -66,7 +66,8 @@
 
 	h1 {
 		font-weight: 500;
-		font-size: 4.2rem;
+		font-size: 3.6rem;
+		font-family: var(--hh-font-family-heading);
 	}
 
 	@media screen and (min-width: 1024px) {
