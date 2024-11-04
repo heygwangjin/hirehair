@@ -17,9 +17,9 @@ Top navigation bar for the application. It provides a slot for the left side, th
 </script>
 
 <nav>
-	<div class="links">
-		<a class="home-link" href="/" title={home_title} aria-label="HireHair">HireHair</a>
+	<a class="home-link" href="/" title={home_title} aria-label="HireHair">HireHair</a>
 
+	<div class="links">
 		{#each links as link}
 			<a
 				href="/{link.slug}"
@@ -47,7 +47,7 @@ Top navigation bar for the application. It provides a slot for the left side, th
 		height: var(--hh-nav-height);
 		margin: 0 auto;
 		padding: 0 var(--hh-page-padding-side);
-		background-color: hsl(0, 0%, 100%);
+		background-color: var(--hh-background);
 		user-select: none;
 		isolation: isolate;
 
@@ -66,27 +66,23 @@ Top navigation bar for the application. It provides a slot for the left side, th
 	.menu {
 		position: relative;
 		display: flex;
-		justify-content: flex-end;
-		align-items: center;
 		width: 100%;
-		gap: 1.2rem;
+		gap: 1rem;
 	}
 
 	.home-link {
+		display: flex;
+		align-items: center;
 		font: var(--hh-font-logo);
-	}
-
-	@media (min-width: 1024px) {
-		.home-link {
-			width: 9.2rem;
-		}
+		width: 3.4rem;
+		height: 100%;
+		padding: 0 0 0 calc(var(--hh-page-padding-side) + 0rem);
 	}
 
 	.links {
 		display: flex;
 		width: 100%;
 		align-items: center;
-		gap: 1rem;
 
 		a {
 			color: var(--hh-primary);
@@ -107,6 +103,34 @@ Top navigation bar for the application. It provides a slot for the left side, th
 				color: var(--hh-primary);
 				box-shadow: inset 0 -1px 0 0 currentColor;
 			}
+		}
+	}
+
+	@media (min-width: 1024px) {
+		nav {
+			display: grid;
+			grid-template-columns: auto 1fr 1fr;
+
+			&::after {
+				top: auto;
+				bottom: -4px;
+				background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), transparent);
+			}
+		}
+
+		.home-link {
+			width: 13.2rem;
+		}
+
+		.menu {
+			display: flex;
+			width: auto;
+			height: 100%;
+			align-items: center;
+		}
+
+		.menu:last-child {
+			justify-content: end;
 		}
 	}
 </style>

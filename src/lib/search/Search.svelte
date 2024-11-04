@@ -39,12 +39,30 @@
 		type="text"
 		placeholder="채용공고 검색"
 	/>
+
 	<button>
 		<SearchIcon size={18} strokeWidth={1} />
 	</button>
 </div>
 
 <style>
+	input {
+		position: relative;
+		padding: 0.2rem 0.4rem;
+		border: none;
+		font-family: inherit;
+		font-size: 0.875rem;
+		appearance: none;
+		-webkit-appearance: none;
+		width: 100%;
+		height: 2.5rem;
+		border-radius: var(--hh-radius);
+
+		&:focus {
+			outline: none;
+		}
+	}
+
 	.search-container {
 		position: relative;
 		display: flex;
@@ -53,21 +71,10 @@
 		padding: 0 0.4rem;
 		width: 16rem;
 		border: 1px solid var(--hh-input);
-		border-radius: var(--radius);
+		border-radius: var(--hh-radius);
 	}
 
 	.searching {
 		border-color: var(--hh-ring);
-	}
-
-	.search-input {
-		height: 2.5rem;
-		padding: 0.2rem 0.4rem;
-		border-radius: var(--radius);
-		font-size: 0.875rem;
-
-		&:focus {
-			outline: none;
-		}
 	}
 </style>

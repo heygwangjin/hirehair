@@ -8,190 +8,161 @@
 	font-weight: 45 920;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-	:root {
-		font-family: 'Pretendard', --apple-system, sans-serif;
-
-		--background: 0, 0%, 100%;
-		--foreground: 222.2, 84%, 4.9%;
-		--muted: 210, 40%, 96.1%;
-		--muted-foreground: 215.4, 16.3%, 46.9%;
-		--popover: 0, 0%, 100%;
-		--popover-foreground: 222.2, 84%, 4.9%;
-		--card: 0, 0%, 100%;
-		--card-foreground: 222.2, 84%, 4.9%;
-		--border: 214.3, 31.8%, 91.4%;
-		--input: 214.3, 31.8%, 91.4%;
-		--primary: 222.2, 47.4%, 11.2%;
-		--primary-foreground: 210, 40%, 98%;
-		--secondary: 210, 40%, 96.1%;
-		--secondary-foreground: 222.2, 47.4%, 11.2%;
-		--accent: 210, 40%, 96.1%;
-		--accent-foreground: 222.2, 47.4%, 11.2%;
-		--destructive: 0, 72.2%, 50.6%;
-		--destructive-foreground: 210, 40%, 98%;
-		--ring: 222.2, 84%, 4.9%;
-		--radius: 0.5rem;
-		--sidebar-background: 0, 0%, 98%;
-		--sidebar-foreground: 240, 5.3%, 26.1%;
-		--sidebar-primary: 240, 5.9%, 10%;
-		--sidebar-primary-foreground: 0, 0%, 98%;
-		--sidebar-accent: 240, 4.8%, 95.9%;
-		--sidebar-accent-foreground: 240, 5.9%, 10%;
-		--sidebar-border: 220, 13%, 91%;
-		--sidebar-ring: 217.2, 91.2%, 59.8%;
-
-		/* Dimensions */
-		--hh-nav-height: 4rem;
-		--hh-secondary-nav-height: 5rem;
-		--hh-page-padding-top: 6rem;
-		--hh-page-padding-bottom: 8rem;
-		--hh-page-padding-side: 1.6rem;
-
-		/* Typography */
-		--hh-font-family-body: 'Pretendard', --apple-system, sans-serif;
-		--hh-font-family-heading: 'DM Serif Display', Georgia, serif;
-		--hh-font-family-logo: 'Noto Serif', Georgia, serif;
-
-		--hh-font-size-h1: 3.6rem;
-		--hh-font-size-h2: 3rem;
-		--hh-font-size-h3: 2.4rem;
-		--hh-font-size-logo: 1.775rem;
-		--hh-font-size-body-large: 1.125rem;
-		--hh-font-size-body: 1rem;
-		--hh-font-size-body-small: 0.875rem;
-
-		/* doing it this way (rather than just `1.5`) means it has a unit, and can be used elsewhere */
-		--hh-line-height-body-large: calc(1.5 * var(--hh-font-size-body-large));
-		--hh-line-height-body: calc(1.5 * var(--hh-font-size-body));
-		--hh-line-height-body-small: calc(1.5 * var(--hh-font-size-body-small));
-
-		--hh-font-h1: 500 var(--hh-font-size-h1) / 1.2 var(--hh-font-family-heading);
-		--hh-font-h2: 500 var(--hh-font-size-h2) / 1.2 var(--hh-font-family-heading);
-		--hh-font-h3: 500 var(--hh-font-size-h3) / 1.2 var(--hh-font-family-heading);
-		--hh-font-logo: 700 var(--hh-font-size-logo) / 1 var(--hh-font-family-logo);
-		--hh-font-body-large: 400 var(--hh-font-size-body-large) / var(--hh-line-height-body-large)
-			var(--hh-font-family-body);
-		--hh-font-body: 400 var(--hh-font-size-body) / var(--hh-line-height-body)
-			var(--hh-font-family-body);
-		--hh-font-body-small: 400 var(--hh-font-size-body-small) / var(--hh-line-height-body-small)
-			var(--hh-font-family-body);
-
-		/* set at 1.75x so if you zoom +/-10% from common settings it won't switch your font */
-		@media (min-resolution: 1.75x) {
-			--hh-font-family-body: 'Pretendard', --apple-system, sans-serif;
-			--hh-font-size-body-large: 1.125rem;
-			--hh-font-size-body: 1rem;
-			--hh-font-size-body-small: 0.875rem;
-		}
-
-		@media screen and (min-width: 800px) {
-			--sk-font-size-h1: 5.4rem;
-		}
-
-		--hh-background: hsl(0, 0%, 100%);
-		--hh-foreground: hsl(222.2, 84%, 4.9%);
-		--hh-muted: hsl(210, 40%, 96.1%);
-		--hh-muted-foreground: hsl(215.4, 16.3%, 46.9%);
-		--hh-popover: hsl(0, 0%, 100%);
-		--hh-popover-foreground: hsl(222.2, 84%, 4.9%);
-		--hh-card: hsl(0, 0%, 100%);
-		--hh-card-foreground: hsl(222.2, 84%, 4.9%);
-		--hh-border: hsl(214.3, 31.8%, 91.4%);
-		--hh-input: hsl(214.3, 31.8%, 91.4%);
-		--hh-primary: hsl(222.2, 47.4%, 11.2%);
-		--hh-primary-foreground: hsl(210, 40%, 98%);
-		--hh-secondary: hsl(210, 40%, 96.1%);
-		--hh-secondary-foreground: hsl(222.2, 47.4%, 11.2%);
-		--hh-accent: hsl(210, 40%, 96.1%);
-		--hh-accent-foreground: hsl(222.2, 47.4%, 11.2%);
-		--hh-destructive: hsl(0, 72.2%, 50.6%);
-		--hh-destructive-foreground: hsl(210, 40%, 98%);
-		--hh-ring: hsl(222.2, 84%, 4.9%);
-		--hh-sidebar-background: hsl(0, 0%, 98%);
-		--hh-sidebar-foreground: hsl(240, 5.3%, 26.1%);
-		--hh-sidebar-primary: hsl(240, 5.9%, 10%);
-		--hh-sidebar-primary-foreground: hsl(0, 0%, 98%);
-		--hh-sidebar-accent: hsl(240, 4.8%, 95.9%);
-		--hh-sidebar-accent-foreground: hsl(240, 5.9%, 10%);
-		--hh-sidebar-border: hsl(220, 13%, 91%);
-		--hh-sidebar-ring: hsl(217.2, 91.2%, 59.8%);
-	}
-
-	.dark {
-		--background: 222.2, 84%, 4.9%;
-		--foreground: 210, 40%, 98%;
-		--muted: 217.2, 32.6%, 17.5%;
-		--muted-foreground: 215, 20.2%, 65.1%;
-		--popover: 222.2, 84%, 4.9%;
-		--popover-foreground: 210, 40%, 98%;
-		--card: 222.2, 84%, 4.9%;
-		--card-foreground: 210, 40%, 98%;
-		--border: 217.2, 32.6%, 17.5%;
-		--input: 217.2, 32.6%, 17.5%;
-		--primary: 210, 40%, 98%;
-		--primary-foreground: 222.2, 47.4%, 11.2%;
-		--secondary: 217.2, 32.6%, 17.5%;
-		--secondary-foreground: 210, 40%, 98%;
-		--accent: 217.2, 32.6%, 17.5%;
-		--accent-foreground: 210, 40%, 98%;
-		--destructive: 0, 62.8%, 30.6%;
-		--destructive-foreground: 210, 40%, 98%;
-		--ring: 212.7, 26.8%, 83.9%;
-		--sidebar-background: 240, 5.9%, 10%;
-		--sidebar-foreground: 240, 4.8%, 95.9%;
-		--sidebar-primary: 224.3, 76.3%, 48%;
-		--sidebar-primary-foreground: 0, 0%, 100%;
-		--sidebar-accent: 240, 3.7%, 15.9%;
-		--sidebar-accent-foreground: 240, 4.8%, 95.9%;
-		--sidebar-border: 240, 3.7%, 15.9%;
-		--sidebar-ring: 217.2, 91.2%, 59.8%;
-
-		--hh-background: hsl(222.2, 84%, 4.9%);
-		--hh-foreground: hsl(210, 40%, 98%);
-		--hh-muted: hsl(217.2, 32.6%, 17.5%);
-		--hh-muted-foreground: hsl(215, 20.2%, 65.1%);
-		--hh-popover: hsl(222.2, 84%, 4.9%);
-		--hh-popover-foreground: hsl(210, 40%, 98%);
-		--hh-card: hsl(222.2, 84%, 4.9%);
-		--hh-card-foreground: hsl(210, 40%, 98%);
-		--hh-border: hsl(217.2, 32.6%, 17.5%);
-		--hh-input: hsl(217.2, 32.6%, 17.5%);
-		--hh-primary: hsl(210, 40%, 98%);
-		--hh-primary-foreground: hsl(222.2, 47.4%, 11.2%);
-		--hh-secondary: hsl(217.2, 32.6%, 17.5%);
-		--hh-secondary-foreground: hsl(210, 40%, 98%);
-		--hh-accent: hsl(217.2, 32.6%, 17.5%);
-		--hh-accent-foreground: hsl(210, 40%, 98%);
-		--hh-destructive: hsl(0, 62.8%, 30.6%);
-		--hh-destructive-foreground: hsl(210, 40%, 98%);
-		--hh-ring: hsl(212.7, 26.8%, 83.9%);
-		--hh-sidebar-background: hsl(240, 5.9%, 10%);
-		--hh-sidebar-foreground: hsl(240, 4.8%, 95.9%);
-		--hh-sidebar-primary: hsl(224.3, 76.3%, 48%);
-		--hh-sidebar-primary-foreground: hsl(0, 0%, 100%);
-		--hh-sidebar-accent: hsl(240, 3.7%, 15.9%);
-		--hh-sidebar-accent-foreground: hsl(240, 4.8%, 95.9%);
-		--hh-sidebar-border: hsl(240, 3.7%, 15.9%);
-		--hh-sidebar-ring: hsl(217.2, 91.2%, 59.8%);
-	}
-}
-
-@layer base {
-	* {
-		@apply border-border;
-	}
-	body {
-		@apply bg-background text-foreground;
-	}
+html {
+	/* font-size: 62.5%; */
+	-webkit-text-size-adjust: 100%;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	box-sizing: border-box;
+	border-collapse: collapse;
 }
 
 html,
 body {
 	height: 100%;
 	width: 100%;
+}
+
+* {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	scrollbar-width: thin;
+	scrollbar-color: var(--hh-scrollbar) transparent;
+}
+
+/*  buttons -------------------------------- */
+input,
+button {
+	font-family: var(--sk-font-family-ui);
+	font-size: inherit;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	color: currentColor;
+}
+
+button[disabled] {
+	color: var(--sk-muted-foreground);
+}
+
+/*  links ------------------------------------- */
+a {
+	color: var(--hh-accent-foreground);
+	text-decoration: none;
+}
+
+:root {
+	font-family: 'Pretendard', --apple-system, sans-serif;
+
+	--hh-scrollbar: rgba(0, 0, 0, 0.3);
+
+	--hh-radius: 0.5rem;
+
+	/* Dimensions */
+	--hh-nav-height: 4rem;
+	--hh-secondary-nav-height: 5rem;
+	--hh-page-padding-top: 6rem;
+	--hh-page-padding-bottom: 8rem;
+	--hh-page-padding-side: 1.6rem;
+
+	/* Typography */
+	--hh-font-family-body: 'Pretendard', --apple-system, sans-serif;
+	--hh-font-family-heading: 'DM Serif Display', Georgia, serif;
+	--hh-font-family-logo: 'Noto Serif', Georgia, serif;
+
+	--hh-font-size-h1: 3.6rem;
+	--hh-font-size-h2: 3rem;
+	--hh-font-size-h3: 2.4rem;
+	--hh-font-size-logo: 1.775rem;
+	--hh-font-size-body-large: 1.125rem;
+	--hh-font-size-body: 1rem;
+	--hh-font-size-body-small: 0.875rem;
+
+	/* doing it this way (rather than just `1.5`) means it has a unit, and can be used elsewhere */
+	--hh-line-height-body-large: calc(1.5 * var(--hh-font-size-body-large));
+	--hh-line-height-body: calc(1.5 * var(--hh-font-size-body));
+	--hh-line-height-body-small: calc(1.5 * var(--hh-font-size-body-small));
+
+	--hh-font-h1: 500 var(--hh-font-size-h1) / 1.2 var(--hh-font-family-heading);
+	--hh-font-h2: 500 var(--hh-font-size-h2) / 1.2 var(--hh-font-family-heading);
+	--hh-font-h3: 500 var(--hh-font-size-h3) / 1.2 var(--hh-font-family-heading);
+	--hh-font-logo: 700 var(--hh-font-size-logo) / 1 var(--hh-font-family-logo);
+	--hh-font-body-large: 400 var(--hh-font-size-body-large) / var(--hh-line-height-body-large)
+		var(--hh-font-family-body);
+	--hh-font-body: 400 var(--hh-font-size-body) / var(--hh-line-height-body)
+		var(--hh-font-family-body);
+	--hh-font-body-small: 400 var(--hh-font-size-body-small) / var(--hh-line-height-body-small)
+		var(--hh-font-family-body);
+
+	/* set at 1.75x so if you zoom +/-10% from common settings it won't switch your font */
+	@media (min-resolution: 1.75x) {
+		--hh-font-family-body: 'Pretendard', --apple-system, sans-serif;
+		--hh-font-size-body-large: 1.125rem;
+		--hh-font-size-body: 1rem;
+		--hh-font-size-body-small: 0.875rem;
+	}
+
+	@media screen and (min-width: 800px) {
+		--sk-font-size-h1: 5.4rem;
+	}
+
+	--hh-background: hsl(0, 0%, 100%);
+	--hh-foreground: hsl(222.2, 84%, 4.9%);
+	--hh-muted: hsl(210, 40%, 96.1%);
+	--hh-muted-foreground: hsl(215.4, 16.3%, 46.9%);
+	--hh-popover: hsl(0, 0%, 100%);
+	--hh-popover-foreground: hsl(222.2, 84%, 4.9%);
+	--hh-card: hsl(0, 0%, 100%);
+	--hh-card-foreground: hsl(222.2, 84%, 4.9%);
+	--hh-border: hsl(214.3, 31.8%, 91.4%);
+	--hh-input: hsl(214.3, 31.8%, 91.4%);
+	--hh-primary: hsl(222.2, 47.4%, 11.2%);
+	--hh-primary-foreground: hsl(210, 40%, 98%);
+	--hh-secondary: hsl(210, 40%, 96.1%);
+	--hh-secondary-foreground: hsl(222.2, 47.4%, 11.2%);
+	--hh-accent: hsl(210, 40%, 96.1%);
+	--hh-accent-foreground: hsl(222.2, 47.4%, 11.2%);
+	--hh-destructive: hsl(0, 72.2%, 50.6%);
+	--hh-destructive-foreground: hsl(210, 40%, 98%);
+	--hh-ring: hsl(222.2, 84%, 4.9%);
+	--hh-sidebar-background: hsl(0, 0%, 98%);
+	--hh-sidebar-foreground: hsl(240, 5.3%, 26.1%);
+	--hh-sidebar-primary: hsl(240, 5.9%, 10%);
+	--hh-sidebar-primary-foreground: hsl(0, 0%, 98%);
+	--hh-sidebar-accent: hsl(240, 4.8%, 95.9%);
+	--hh-sidebar-accent-foreground: hsl(240, 5.9%, 10%);
+	--hh-sidebar-border: hsl(220, 13%, 91%);
+	--hh-sidebar-ring: hsl(217.2, 91.2%, 59.8%);
+}
+
+:root.dark {
+	--hh-background: hsl(222.2, 84%, 4.9%);
+	--hh-foreground: hsl(210, 40%, 98%);
+	--hh-muted: hsl(217.2, 32.6%, 17.5%);
+	--hh-muted-foreground: hsl(215, 20.2%, 65.1%);
+	--hh-popover: hsl(222.2, 84%, 4.9%);
+	--hh-popover-foreground: hsl(210, 40%, 98%);
+	--hh-card: hsl(222.2, 84%, 4.9%);
+	--hh-card-foreground: hsl(210, 40%, 98%);
+	--hh-border: hsl(217.2, 32.6%, 17.5%);
+	--hh-input: hsl(217.2, 32.6%, 17.5%);
+	--hh-primary: hsl(210, 40%, 98%);
+	--hh-primary-foreground: hsl(222.2, 47.4%, 11.2%);
+	--hh-secondary: hsl(217.2, 32.6%, 17.5%);
+	--hh-secondary-foreground: hsl(210, 40%, 98%);
+	--hh-accent: hsl(217.2, 32.6%, 17.5%);
+	--hh-accent-foreground: hsl(210, 40%, 98%);
+	--hh-destructive: hsl(0, 62.8%, 30.6%);
+	--hh-destructive-foreground: hsl(210, 40%, 98%);
+	--hh-ring: hsl(212.7, 26.8%, 83.9%);
+	--hh-sidebar-background: hsl(240, 5.9%, 10%);
+	--hh-sidebar-foreground: hsl(240, 4.8%, 95.9%);
+	--hh-sidebar-primary: hsl(224.3, 76.3%, 48%);
+	--hh-sidebar-primary-foreground: hsl(0, 0%, 100%);
+	--hh-sidebar-accent: hsl(240, 3.7%, 15.9%);
+	--hh-sidebar-accent-foreground: hsl(240, 4.8%, 95.9%);
+	--hh-sidebar-border: hsl(240, 3.7%, 15.9%);
+	--hh-sidebar-ring: hsl(217.2, 91.2%, 59.8%);
 }
