@@ -28,17 +28,15 @@ The main shell of the application. It provides a slot for the top navigation, th
 	main {
 		position: relative;
 		margin: 0 auto;
-		padding-top: 0;
+		padding-top: var(--hh-banner-height);
 		padding-bottom: 0;
 		height: 100%;
 	}
 
 	@media (min-width: 1024px) {
 		main {
-			padding-top: var(--hh-page-padding-top);
-			padding-bottom: var(--hh-page-padding-bottom);
-			padding-left: var(--hh-page-padding-side);
-			padding-right: var(--hh-page-padding-side);
+			padding-top: var(--hh-nav-height);
+			padding-bottom: var(--hh-banner-height);
 		}
 	}
 </style>

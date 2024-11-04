@@ -30,6 +30,12 @@ importers:
       '@fontsource/dm-serif-display':
         specifier: ^5.1.0
         version: 5.1.0
+      '@fontsource/fira-sans':
+        specifier: ^5.1.0
+        version: 5.1.0
+      '@fontsource/noto-sans-kr':
+        specifier: ^5.1.0
+        version: 5.1.0
       '@fontsource/noto-serif':
         specifier: ^5.1.0
         version: 5.1.0
@@ -580,6 +586,12 @@ packages:
 
   '@fontsource/dm-serif-display@5.1.0':
     resolution: {integrity: sha512-8IGBpTOn2XRA09plE6iAlZajL09iwCdSTd60FiM9NsD7VV4Nqseo9tgqiZLyuLC9D1jht5i39I2IYI/o2+Q0Kg==}
+
+  '@fontsource/fira-sans@5.1.0':
+    resolution: {integrity: sha512-qfAjF5WcrL6qQh9eIWLK7lOh9wbCgCnVWh2Nu2gozrTgsUgYBLR8sbCGYwlK1K0yZoQsR2i9VSiQ16wwPCBkSw==}
+
+  '@fontsource/noto-sans-kr@5.1.0':
+    resolution: {integrity: sha512-Q0wGdwQm8GQ5D2OeEqssgWOv16FJwEmoTnwwOPeshvVgxGT83Uxak7jEXNbRqmMCLJNoPOdzYXadwYL+hvfx7A==}
 
   '@fontsource/noto-serif@5.1.0':
     resolution: {integrity: sha512-C/rancPr6kcRGNAut7g8CAZNhB1kOWB6VRQDCo6ZoUnW2Mja962ZcrU0nD7nFeSMJiSeyX5phCrajMaUJE3SGg==}
@@ -2528,6 +2540,10 @@ snapshots:
       levn: 0.4.1
 
   '@fontsource/dm-serif-display@5.1.0': {}
+
+  '@fontsource/fira-sans@5.1.0': {}
+
+  '@fontsource/noto-sans-kr@5.1.0': {}
 
   '@fontsource/noto-serif@5.1.0': {}
 

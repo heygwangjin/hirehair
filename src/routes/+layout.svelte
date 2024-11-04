@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '../app.css';
+	import '$lib/styles/index.css';
 	import Shell from '$lib/components/Shell.svelte';
 	import Nav from '$lib/nav/Nav.svelte';
 

@@ -47,7 +47,7 @@ Top navigation bar for the application. It provides a slot for the left side, th
 		height: var(--hh-nav-height);
 		margin: 0 auto;
 		padding: 0 var(--hh-page-padding-side);
-		background-color: var(--hh-background);
+		background-color: var(--hh-bg-2);
 		user-select: none;
 		isolation: isolate;
 
@@ -55,12 +55,16 @@ Top navigation bar for the application. It provides a slot for the left side, th
 			content: '';
 			position: absolute;
 			left: 0;
-			top: auto;
+			top: -4px;
 			width: 100%;
 			height: 4px;
-			bottom: -4px;
-			background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), transparent);
+			background: linear-gradient(to top, rgba(0, 0, 0, 0.05), transparent);
 		}
+	}
+
+	a {
+		font: var(--hh-font-body);
+		color: var(--hh-fg-3);
 	}
 
 	.menu {
@@ -76,7 +80,7 @@ Top navigation bar for the application. It provides a slot for the left side, th
 		font: var(--hh-font-logo);
 		width: 3.4rem;
 		height: 100%;
-		padding: 0 0 0 calc(var(--hh-page-padding-side) + 0rem);
+		text-decoration: none;
 	}
 
 	.links {
@@ -85,22 +89,24 @@ Top navigation bar for the application. It provides a slot for the left side, th
 		align-items: center;
 
 		a {
-			color: var(--hh-primary);
+			color: inherit;
+			font: var(--hh-font-body);
 			white-space: nowrap;
 			height: 100%;
 			display: flex;
 			align-items: center;
 			text-decoration: none;
 			outline-offset: -2px;
+			font-weight: 600;
+
 			padding: 0.1rem 0.8rem 0 0.8rem;
-			font-weight: bold;
 
 			&:hover {
-				box-shadow: inset 0 -1px 0 0 var(--hh-muted);
+				box-shadow: inset 0 -1px 0 0 var(--hh-border);
 			}
 
 			&[aria-current='page'] {
-				color: var(--hh-primary);
+				color: var(--hh-fg-accent);
 				box-shadow: inset 0 -1px 0 0 currentColor;
 			}
 		}
