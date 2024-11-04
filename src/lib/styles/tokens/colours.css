@@ -13,7 +13,7 @@
 	--hh-fg-2: hsl(0, 0%, 12%); /* most text should be this colour */
 	--hh-fg-3: hsl(0, 0%, 27%); /* secondary text (e.g. figcaptions) and icons */
 	--hh-fg-4: hsl(0, 0%, 45%); /* faded text (disabled buttons, comments etc) */
-	--hh-fg-accent: hsl(222.2, 47.4%, 11.2%);
+	--hh-fg-accent: hsl(12, 93%, 43%);
 	--hh-fg-placeholder: hsl(0, 0%, 78%);
 
 	/* Backgrounborderlours */
