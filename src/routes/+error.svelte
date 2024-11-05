@@ -44,7 +44,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 0 var(--hh-page-padding-side);
+		padding: 0 var(--hp-page-padding-side);
 		width: 100%;
 		height: 100%;
 	}
@@ -61,18 +61,18 @@
 
 	p {
 		margin: 1em auto;
-		font: var(--hh-font-body);
+		font: var(--hp-font-body);
 	}
 
 	h1 {
 		font-weight: 500;
 		font-size: 3.6rem;
-		font-family: var(--hh-font-family-heading);
+		font-family: var(--hp-font-family-heading);
 	}
 
 	@media screen and (min-width: 1024px) {
 		p {
-			font: var(--hh-font-body-large);
+			font: var(--hp-font-body-large);
 		}
 
 		h1 {

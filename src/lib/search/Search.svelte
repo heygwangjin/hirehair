@@ -36,7 +36,7 @@
 		bind:value={$search_query}
 		class="search-input"
 		type="text"
-		placeholder="채용공고 검색"
+		placeholder="채용정보 검색"
 		aria-describedby="search-description"
 	/>
 </div>
@@ -50,18 +50,18 @@
 		-webkit-appearance: none;
 		width: 100%;
 		height: 3.8rem;
-		border-radius: var(--hh-border-radius-inner);
-		font: var(--hh-font-body-small);
+		border-radius: var(--hp-border-radius-inner);
+		font: var(--hp-font-body-small);
 		background:
 			no-repeat 0 55% / 1.3em 1.3em url(../icons/search.svg),
-			var(--hh-bg-1);
+			var(--hp-bg-1);
 
 		&:focus {
 			outline: none;
 		}
 
 		&::placeholder {
-			color: var(--hh-fg-placeholder);
+			color: var(--hp-fg-placeholder);
 		}
 	}
 
@@ -70,11 +70,11 @@
 		align-items: center;
 		padding: 0 1.2rem;
 		width: 28rem;
-		border: 1px solid var(--hh-border);
-		border-radius: var(--hh-border-radius);
+		border: 1px solid var(--hp-border);
+		border-radius: var(--hp-border-radius);
 	}
 
 	.searching {
-		border-color: var(--hh-fg-accent);
+		border: 2px solid var(--hp-fg-accent);
 	}
 </style>

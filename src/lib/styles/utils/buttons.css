@@ -1,67 +1,67 @@
 :root {
-	--hh-raised-border: var(--hh-border);
-	--hh-raised-highlight: hsl(0, 0%, 95%);
-	--hh-raised-shadow: hsl(0, 0%, 86%);
+	--hp-raised-border: var(--hp-border);
+	--hp-raised-highlight: hsl(0, 0%, 95%);
+	--hp-raised-shadow: hsl(0, 0%, 86%);
 
 	/* raised buttons */
-	--hh-raised-color: var(--hh-raised-highlight) var(--hh-raised-border) var(--hh-raised-border)
-		var(--hh-raised-highlight);
-	--hh-raised-hover-color: var(--hh-raised-border) var(--hh-raised-shadow) var(--hh-raised-shadow)
-		var(--hh-raised-border);
-	--hh-raised-active-color: var(--hh-raised-shadow) var(--hh-raised-border) var(--hh-raised-border)
-		var(--hh-raised-shadow);
-	--hh-raised-width: 1px 2px 2px 1px;
-	--hh-raised-active-width: 2px 1px 1px 2px;
+	--hp-raised-color: var(--hp-raised-highlight) var(--hp-raised-border) var(--hp-raised-border)
+		var(--hp-raised-highlight);
+	--hp-raised-hover-color: var(--hp-raised-border) var(--hp-raised-shadow) var(--hp-raised-shadow)
+		var(--hp-raised-border);
+	--hp-raised-active-color: var(--hp-raised-shadow) var(--hp-raised-border) var(--hp-raised-border)
+		var(--hp-raised-shadow);
+	--hp-raised-width: 1px 2px 2px 1px;
+	--hp-raised-active-width: 2px 1px 1px 2px;
 
 	&.dark {
-		--hh-raised-highlight: hsl(var(--hh-bg-hue), 15%, 32%);
-		--hh-raised-shadow: var(--hh-bg-3);
+		--hp-raised-highlight: hsl(var(--hp-bg-hue), 15%, 32%);
+		--hp-raised-shadow: var(--hp-bg-3);
 
 		/* raised buttons */
-		--hh-raised-color: var(--hh-raised-border) var(--hh-raised-shadow) var(--hh-raised-shadow)
-			var(--hh-raised-border);
-		--hh-raised-hover-color: var(--hh-raised-highlight) var(--hh-raised-shadow)
-			var(--hh-raised-shadow) var(--hh-raised-highlight);
-		--hh-raised-active-color: var(--hh-raised-shadow) var(--hh-raised-highlight)
-			var(--hh-raised-highlight) var(--hh-raised-shadow);
+		--hp-raised-color: var(--hp-raised-border) var(--hp-raised-shadow) var(--hp-raised-shadow)
+			var(--hp-raised-border);
+		--hp-raised-hover-color: var(--hp-raised-highlight) var(--hp-raised-shadow)
+			var(--hp-raised-shadow) var(--hp-raised-highlight);
+		--hp-raised-active-color: var(--hp-raised-shadow) var(--hp-raised-highlight)
+			var(--hp-raised-highlight) var(--hp-raised-shadow);
 	}
 }
 
 .raised {
-	border-radius: var(--hh-border-radius);
+	border-radius: var(--hp-border-radius);
 	border-style: solid;
-	border-color: var(--hh-raised-color);
-	border-width: var(--hh-raised-width);
+	border-color: var(--hp-raised-color);
+	border-width: var(--hp-raised-width);
 
 	&.primary {
-		--hh-raised-color: hsla(12, 93%, 60%) hsla(12, 93%, 35%) hsla(12, 93%, 35%) hsla(12, 93%, 60%);
-		--hh-raised-hover-color: hsla(12, 93%, 70%) hsla(12, 93%, 30%) hsla(12, 93%, 30%)
+		--hp-raised-color: hsla(12, 93%, 60%) hsla(12, 93%, 35%) hsla(12, 93%, 35%) hsla(12, 93%, 60%);
+		--hp-raised-hover-color: hsla(12, 93%, 70%) hsla(12, 93%, 30%) hsla(12, 93%, 30%)
 			hsla(12, 93%, 70%);
-		--hh-raised-active-color: hsla(12, 93%, 30%) hsla(12, 93%, 70%) hsla(12, 93%, 70%)
+		--hp-raised-active-color: hsla(12, 93%, 30%) hsla(12, 93%, 70%) hsla(12, 93%, 70%)
 			hsla(12, 93%, 30%);
-		background: var(--hh-bg-accent);
+		background: var(--hp-bg-accent);
 		color: white;
 
 		:root.dark & {
-			--hh-raised-color: hsla(12, 93%, 60%) hsla(12, 93%, 30%) hsla(12, 93%, 30%) hsla(12, 93%, 60%);
-			--hh-raised-hover-color: hsla(12, 93%, 65%) hsla(12, 93%, 27%) hsla(12, 93%, 27%)
+			--hp-raised-color: hsla(12, 93%, 60%) hsla(12, 93%, 30%) hsla(12, 93%, 30%) hsla(12, 93%, 60%);
+			--hp-raised-hover-color: hsla(12, 93%, 65%) hsla(12, 93%, 27%) hsla(12, 93%, 27%)
 				hsla(12, 93%, 65%);
-			--hh-raised-active-color: hsla(12, 93%, 25%) hsla(12, 93%, 70%) hsla(12, 93%, 70%)
+			--hp-raised-active-color: hsla(12, 93%, 25%) hsla(12, 93%, 70%) hsla(12, 93%, 70%)
 				hsla(12, 93%, 25%);
 		}
 	}
 
 	&:hover {
-		border-color: var(--hh-raised-hover-color);
+		border-color: var(--hp-raised-hover-color);
 	}
 
 	&:active {
-		border-color: var(--hh-raised-active-color);
-		border-width: var(--hh-raised-active-width);
+		border-color: var(--hp-raised-active-color);
+		border-width: var(--hp-raised-active-width);
 	}
 
 	&:disabled {
-		border-color: var(--hh-raised-border);
+		border-color: var(--hp-raised-border);
 		border-width: 1px;
 	}
 }
@@ -82,7 +82,7 @@ button:where(.tooltip, .tooltip-left)[aria-label]:where(:hover, :focus) {
 		width: var(--arrow-size);
 		height: var(--arrow-size);
 		position: absolute;
-		background: var(--hh-fg-3);
+		background: var(--hp-fg-3);
 		top: calc(100% + var(--arrow-size) * 0.5);
 		left: calc(50% - var(--arrow-size) * 0.5);
 		rotate: 45deg;
@@ -94,11 +94,11 @@ button:where(.tooltip, .tooltip-left)[aria-label]:where(:hover, :focus) {
 		top: calc(100% + var(--arrow-size));
 		left: 50%;
 		translate: -50% 0;
-		background: var(--hh-fg-3);
-		color: var(--hh-bg-4);
+		background: var(--hp-fg-3);
+		color: var(--hp-bg-4);
 		padding: 0.5em 0.8em;
-		border-radius: var(--hh-border-radius);
-		font: var(--hh-font-ui-small);
+		border-radius: var(--hp-border-radius);
+		font: var(--hp-font-ui-small);
 		text-transform: none;
 		white-space: pre;
 	}
