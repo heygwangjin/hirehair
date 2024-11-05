@@ -36,7 +36,7 @@
 		bind:value={$search_query}
 		class="search-input"
 		type="text"
-		placeholder="채용공고 검색"
+		placeholder="채용정보 검색"
 		aria-describedby="search-description"
 	/>
 </div>

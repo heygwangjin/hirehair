@@ -2,18 +2,18 @@ import type { NavigationLink } from '$lib/types';
 
 const nav_links: NavigationLink[] = [
 	{
-		title: '채용공고',
+		title: '채용정보',
 		slug: 'jobs'
 	},
 	{
-		title: '디자이너',
-		slug: 'designers'
+		title: '인재정보',
+		slug: 'seekers'
 	}
 ];
 
 const sections: Record<string, string> = {
-	jobs: '채용공고',
-	designers: '디자이너'
+	jobs: '채용정보',
+	seekers: '인재정보'
 };
 
 export const load = async ({ url, fetch }) => {
