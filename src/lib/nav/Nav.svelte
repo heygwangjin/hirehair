@@ -7,6 +7,7 @@ Top navigation bar for the application. It provides a slot for the left side, th
 	import { page } from '$app/stores';
 	import Search from '$lib/search/Search.svelte';
 	import Icon from '$lib/components/Icon.svelte';
+	import MobileMenu from './MobileMenu.svelte';
 
 	interface Props {
 		home_title?: string;
@@ -48,6 +49,8 @@ Top navigation bar for the application. It provides a slot for the left side, th
 		</a>
 	</div>
 </nav>
+
+<MobileMenu />
 
 <style>
 	nav {
