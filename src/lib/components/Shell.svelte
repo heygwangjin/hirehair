@@ -31,9 +31,9 @@ The main shell of the application. It provides a slot for the top navigation, th
 	main {
 		position: relative;
 		margin: 0 auto;
-		padding: var(--hh-page-padding-block) var(--hh-page-padding-side);
+		padding: var(--hp-page-padding-block) var(--hp-page-padding-side);
 		height: 100%;
-		max-width: var(--hh-page-max-width);
+		max-width: var(--hp-page-max-width);
 		margin: 0 auto;
 	}
 </style>

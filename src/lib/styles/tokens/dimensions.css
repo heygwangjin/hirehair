@@ -1,11 +1,11 @@
 :root {
-	--hh-nav-height: 6rem;
-	--hh-page-padding-block: 8rem;
-	--hh-page-padding-side: 1.6rem;
-	--hh-thick-border-width: 0.3rem;
-	--hh-border-radius: 0.4rem;
-	--hh-border-radius-inner: 0.2rem;
-	--hh-page-max-width: 126rem;
-	--hh-page-content-width: 76rem;
-	--hh-banner-height: 0px;
+	--hp-nav-height: 6rem;
+	--hp-page-padding-block: 8rem;
+	--hp-page-padding-side: 1.6rem;
+	--hp-thick-border-width: 0.3rem;
+	--hp-border-radius: 0.4rem;
+	--hp-border-radius-inner: 0.2rem;
+	--hp-page-max-width: 126rem;
+	--hp-page-content-width: 76rem;
+	--hp-banner-height: 0px;
 }

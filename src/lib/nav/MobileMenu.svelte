@@ -42,9 +42,9 @@
 		bottom: 0;
 		z-index: 101;
 		width: 100vw;
-		height: var(--hh-nav-height);
+		height: var(--hp-nav-height);
 		margin: 0 auto;
-		background-color: var(--hh-bg-2);
+		background-color: var(--hp-bg-1);
 		user-select: none;
 		isolation: isolate;
 
@@ -60,8 +60,8 @@
 	}
 
 	a {
-		font: var(--hh-font-body);
-		color: var(--hh-fg-3);
+		font: var(--hp-font-body);
+		color: var(--hp-fg-3);
 	}
 
 	div {
@@ -75,7 +75,7 @@
 	}
 
 	span {
-		color: var(--hh-fg-3);
+		color: var(--hp-fg-3);
 	}
 
 	@media screen and (min-width: 1024px) {

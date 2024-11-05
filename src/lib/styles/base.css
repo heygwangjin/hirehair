@@ -18,10 +18,10 @@ body {
 }
 
 body {
-	font-family: var(--hh-font-family-body);
+	font-family: var(--hp-font-family-body);
 	line-height: 1.5;
-	color: var(--hh-fg-2);
-	background-color: var(--hh-bg-1);
+	color: var(--hp-fg-2);
+	background-color: var(--hp-bg-1);
 	width: 100%;
 	tab-size: 2;
 	-moz-tab-size: 2;
@@ -32,18 +32,18 @@ body {
 	margin: 0;
 	padding: 0;
 	scrollbar-width: thin;
-	scrollbar-color: var(--hh-scrollbar) transparent;
+	scrollbar-color: var(--hp-scrollbar) transparent;
 }
 
 *:focus-visible {
-	outline: 2px solid var(--hh-fg-accent);
-	border-radius: var(--hh-border-radius);
+	outline: 2px solid var(--hp-fg-accent);
+	border-radius: var(--hp-border-radius);
 }
 
 p,
 ul,
 ol {
-	font: var(--hh-font-body);
+	font: var(--hp-font-body);
 	margin: 0.5lh 0;
 
 	&:first-child {
@@ -67,15 +67,15 @@ a:hover {
 }
 
 h1 {
-	font: var(--hh-font-h1);
+	font: var(--hp-font-h1);
 }
 
 h2 {
-	font: var(--hh-font-h2);
+	font: var(--hp-font-h2);
 }
 
 h3 {
-	font: var(--hh-font-h3);
+	font: var(--hp-font-h3);
 }
 
 h1,
@@ -83,7 +83,7 @@ h2,
 h3 {
 	position: relative;
 	text-wrap: balance;
-	color: var(--hh-fg-1);
+	color: var(--hp-fg-1);
 }
 
 strong {
@@ -91,7 +91,7 @@ strong {
 }
 
 kbd {
-	font-family: var(--hh-font-family-ui);
+	font-family: var(--hp-font-family-ui);
 }
 
 pre {
@@ -103,18 +103,18 @@ header {
 }
 
 ::selection {
-	background: var(--hh-bg-selection);
+	background: var(--hp-bg-selection);
 }
 
 /*	opinionated styles --------------------- */
 blockquote {
 	position: relative;
-	margin: var(--hh-line-height-body) 0;
-	max-width: var(--hh-page-content-width);
+	margin: var(--hp-line-height-body) 0;
+	max-width: var(--hp-page-content-width);
 }
 
 blockquote :where(p, ul, ol) {
-	font-size: var(--hh-font-size-body-small);
+	font-size: var(--hp-font-size-body-small);
 }
 
 blockquote :last-child {
@@ -124,7 +124,7 @@ blockquote :last-child {
 /*  buttons -------------------------------- */
 input,
 button {
-	font-family: var(--hh-font-family-body);
+	font-family: var(--hp-font-family-body);
 	font-size: inherit;
 }
 
@@ -135,18 +135,18 @@ button {
 }
 
 button[disabled] {
-	color: var(--hh-fg-4);
+	color: var(--hp-fg-4);
 }
 
 /*  links ------------------------------------- */
 a {
-	color: var(--hh-fg-accent);
+	color: var(--hp-fg-accent);
 }
 
 /*  tables --------------------------------- */
 table {
 	width: 100%;
-	font: var(--hh-font-body-small);
+	font: var(--hp-font-body-small);
 }
 
 td,

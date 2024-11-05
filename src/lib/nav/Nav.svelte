@@ -57,15 +57,15 @@ Top navigation bar for the application. It provides a slot for the left side, th
 <style>
 	nav {
 		display: flex;
-		height: var(--hh-nav-height);
-		padding: 0 var(--hh-page-padding-side);
-		max-width: var(--hh-page-max-width);
+		height: var(--hp-nav-height);
+		padding: 0 var(--hp-page-padding-side);
+		max-width: var(--hp-page-max-width);
 		margin: 0 auto;
 	}
 
 	a {
-		font: var(--hh-font-body);
-		color: var(--hh-fg-3);
+		font: var(--hp-font-body);
+		color: var(--hp-fg-3);
 	}
 
 	.header {
@@ -73,7 +73,7 @@ Top navigation bar for the application. It provides a slot for the left side, th
 		top: 0;
 		z-index: 101;
 		width: 100vw;
-		background-color: var(--hh-bg-2);
+		background-color: var(--hp-bg-1);
 		user-select: none;
 		isolation: isolate;
 
@@ -108,7 +108,8 @@ Top navigation bar for the application. It provides a slot for the left side, th
 	.home-link {
 		display: flex;
 		align-items: center;
-		font: var(--hh-font-logo);
+		font: var(--hp-font-logo);
+		color: var(--hp-fg-1);
 		width: 10rem;
 		height: 100%;
 		text-decoration: none;
@@ -121,7 +122,7 @@ Top navigation bar for the application. It provides a slot for the left side, th
 
 		a {
 			color: inherit;
-			font: var(--hh-font-body);
+			font: var(--hp-font-body);
 			white-space: nowrap;
 			height: 100%;
 			display: flex;
@@ -133,11 +134,11 @@ Top navigation bar for the application. It provides a slot for the left side, th
 			padding: 0.1rem 1.6rem 0 1.6rem;
 
 			&:hover {
-				box-shadow: inset 0 -1px 0 0 var(--hh-border);
+				box-shadow: inset 0 -1px 0 0 var(--hp-border);
 			}
 
 			&[aria-current='page'] {
-				color: var(--hh-fg-accent);
+				color: var(--hp-fg-accent);
 				box-shadow: inset 0 -1px 0 0 currentColor;
 			}
 		}
