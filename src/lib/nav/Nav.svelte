@@ -6,6 +6,7 @@ Top navigation bar for the application. It provides a slot for the left side, th
 	import type { NavigationLink } from '$lib/types';
 	import { page } from '$app/stores';
 	import Search from '$lib/search/Search.svelte';
+	import Icon from '$lib/components/Icon.svelte';
 
 	interface Props {
 		home_title?: string;
@@ -19,21 +20,29 @@ Top navigation bar for the application. It provides a slot for the left side, th
 <nav>
 	<a class="home-link" href="/" title={home_title} aria-label="HairPeople">헤어피플</a>
 
-	<div class="links">
-		{#each links as link}
-			<a
-				href="/{link.slug}"
-				aria-current={$page.url.pathname.startsWith(`/${link.slug}`) ? 'page' : null}
-			>
-				{link.title}
-			</a>
-		{/each}
+	<div class="desktop">
+		<div class="links">
+			{#each links as link}
+				<a
+					href="/{link.slug}"
+					aria-current={$page.url.pathname.startsWith(`/${link.slug}`) ? 'page' : null}
+				>
+					{link.title}
+				</a>
+			{/each}
+		</div>
+
+		<div class="menu">
+			<Search />
+			<a href="/signin">로그인</a>
+			<a href="/signup">회원가입</a>
+		</div>
 	</div>
 
-	<div class="menu">
-		<Search />
-		<a href="/signin">로그인</a>
-		<a href="/signup">회원가입</a>
+	<div class="mobile mobile-menu">
+		<a href="/search" aria-label="Search" class="search">
+			<Icon name="search" />
+		</a>
 	</div>
 </nav>
 
@@ -54,11 +63,12 @@ Top navigation bar for the application. It provides a slot for the left side, th
 		&::after {
 			content: '';
 			position: absolute;
+			top: auto;
+			bottom: -4px;
 			left: 0;
-			top: -4px;
 			width: 100%;
 			height: 4px;
-			background: linear-gradient(to top, rgba(0, 0, 0, 0.05), transparent);
+			background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), transparent);
 		}
 	}
 
@@ -72,6 +82,14 @@ Top navigation bar for the application. It provides a slot for the left side, th
 		display: flex;
 		width: 100%;
 		gap: 1rem;
+	}
+
+	.mobile-menu {
+		display: flex;
+		flex: 1;
+		justify-content: end;
+		align-items: center;
+		padding-top: 0.75rem;
 	}
 
 	.home-link {
@@ -112,16 +130,14 @@ Top navigation bar for the application. It provides a slot for the left side, th
 		}
 	}
 
+	.desktop {
+		display: none;
+	}
+
 	@media (min-width: 1024px) {
 		nav {
 			display: grid;
 			grid-template-columns: auto 1fr 1fr;
-
-			&::after {
-				top: auto;
-				bottom: -4px;
-				background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), transparent);
-			}
 		}
 
 		.home-link {
@@ -137,6 +153,14 @@ Top navigation bar for the application. It provides a slot for the left side, th
 
 		.menu:last-child {
 			justify-content: end;
+		}
+
+		.mobile {
+			display: none;
+		}
+
+		.desktop {
+			display: contents;
 		}
 	}
 </style>
