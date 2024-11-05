@@ -87,10 +87,6 @@ h3 {
 	color: var(--hp-fg-1);
 }
 
-strong {
-	font-weight: 400;
-}
-
 kbd {
 	font-family: var(--hp-font-family-ui);
 }
