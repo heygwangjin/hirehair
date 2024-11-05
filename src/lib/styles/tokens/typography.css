@@ -1,0 +1,55 @@
+/* Note: prefer `font: --hh-font-{x}` over `font-family` and `font-size` rules */
+@font-face {
+	display: swap;
+	font-family: 'Pretendard';
+	src: url('$lib/fonts/PretendardVariable.woff2');
+	font-weight: 45 920;
+}
+
+:root {
+	--hh-font-family-ui: 'Fira Sans', -apple-system, sans-serif;
+	--hh-font-family-body: 'Pretendard', -apple-system, 'Noto Sans KR', sans-serif;
+	--hh-font-family-heading: 'DM Serif Display', Georgia, serif;
+
+	--hh-font-size-h1: 3.2rem;
+	--hh-font-size-h2: 2.6rem;
+	--hh-font-size-h3: 2rem;
+	--hh-font-size-body: 1.2rem;
+	--hh-font-size-body-small: 1rem;
+	--hh-font-size-body-large: 1.4rem;
+	--hh-font-size-ui-small: 1.3rem;
+	--hh-font-size-ui-medium: 1.6rem;
+	--hh-font-size-ui-large: 3rem;
+	--hh-font-size-logo: 2.4rem;
+
+	/* doing it this way (rather than just `1.5`) means it has a unit, and can be used elsewhere */
+	--hh-line-height-body: calc(1.5 * var(--hh-font-size-body));
+	--hh-line-height-body-small: calc(1.5 * var(--hh-font-size-body-small));
+	--hh-line-height-body-large: calc(1.5 * var(--hh-font-size-body-large));
+
+	--hh-font-h1: 700 var(--hh-font-size-h1) / 1.2 var(--hh-font-family-body);
+	--hh-font-h2: 700 var(--hh-font-size-h2) / 1.2 var(--hh-font-family-body);
+	--hh-font-h3: 700 var(--hh-font-size-h3) / 1.2 var(--hh-font-family-body);
+	--hh-font-body: 400 var(--hh-font-size-body) / var(--hh-line-height-body)
+		var(--hh-font-family-body);
+	--hh-font-body-small: 400 var(--hh-font-size-body-small) / var(--hh-line-height-body)
+		var(--hh-font-family-body);
+	--hh-font-body-large: 400 var(--hh-font-size-body-large) / var(--hh-line-height-body-large)
+		var(--hh-font-family-body);
+	--hh-font-ui-small: 400 var(--hh-font-size-ui-small) / 1.5 var(--hh-font-family-ui);
+	--hh-font-ui-medium: 400 var(--hh-font-size-ui-medium) / 1.5 var(--hh-font-family-ui);
+	--hh-font-ui-large: 400 var(--hh-font-size-ui-large) / 1.5 var(--hh-font-family-ui);
+	--hh-font-logo: 700 var(--hh-font-size-logo) / 1 var(--hh-font-family-body);
+
+	/* set at 1.75x so if you zoom +/-10% from common settings it won't switch your font */
+	@media (min-resolution: 1.75x) {
+		--hh-font-family-body: 'Pretendard', -apple-system, 'Noto Sans KR', sans-serif;
+		--hh-font-size-body: 1.6rem;
+		--hh-font-size-body-small: 1.4rem;
+		--hh-font-size-body-large: 1.8rem;
+	}
+
+	&.dark {
+		-webkit-font-smoothing: antialiased;
+	}
+}
