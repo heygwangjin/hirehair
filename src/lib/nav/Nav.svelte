@@ -40,8 +40,11 @@ Top navigation bar for the application. It provides a slot for the left side, th
 	</div>
 
 	<div class="mobile mobile-menu">
-		<a href="/search" aria-label="Search" class="search">
+		<a href="/search" aria-label="Search">
 			<Icon name="search" />
+		</a>
+		<a href="/users/mypage" aria-label="My Page">
+			<Icon name="user" />
 		</a>
 	</div>
 </nav>
@@ -90,6 +93,7 @@ Top navigation bar for the application. It provides a slot for the left side, th
 		justify-content: end;
 		align-items: center;
 		padding-top: 0.75rem;
+		gap: 1rem;
 	}
 
 	.home-link {
