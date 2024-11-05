@@ -25,6 +25,7 @@ body {
 	width: 100%;
 	tab-size: 2;
 	-moz-tab-size: 2;
+	touch-action: pan-x pan-y;
 }
 
 * {
@@ -84,10 +85,6 @@ h3 {
 	position: relative;
 	text-wrap: balance;
 	color: var(--hp-fg-1);
-}
-
-strong {
-	font-weight: 400;
 }
 
 kbd {
