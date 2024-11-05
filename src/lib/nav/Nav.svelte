@@ -18,50 +18,61 @@ Top navigation bar for the application. It provides a slot for the left side, th
 	let { home_title = 'Homepage', title, links }: Props = $props();
 </script>
 
-<nav>
-	<a class="home-link" href="/" title={home_title} aria-label="HairPeople">헤어피플</a>
+<div class="header">
+	<nav>
+		<a class="home-link" href="/" title={home_title} aria-label="HairPeople">헤어피플</a>
 
-	<div class="desktop">
-		<div class="links">
-			{#each links as link}
-				<a
-					href="/{link.slug}"
-					aria-current={$page.url.pathname.startsWith(`/${link.slug}`) ? 'page' : null}
-				>
-					{link.title}
-				</a>
-			{/each}
+		<div class="desktop">
+			<div class="links">
+				{#each links as link}
+					<a
+						href="/{link.slug}"
+						aria-current={$page.url.pathname.startsWith(`/${link.slug}`) ? 'page' : null}
+					>
+						{link.title}
+					</a>
+				{/each}
+			</div>
+
+			<div class="menu">
+				<Search />
+				<a href="/signin">로그인</a>
+				<a href="/signup">회원가입</a>
+			</div>
 		</div>
 
-		<div class="menu">
-			<Search />
-			<a href="/signin">로그인</a>
-			<a href="/signup">회원가입</a>
+		<div class="mobile mobile-menu">
+			<a href="/search" aria-label="Search">
+				<Icon name="search" />
+			</a>
+			<a href="/users/mypage" aria-label="My Page">
+				<Icon name="user" />
+			</a>
 		</div>
-	</div>
-
-	<div class="mobile mobile-menu">
-		<a href="/search" aria-label="Search">
-			<Icon name="search" />
-		</a>
-		<a href="/users/mypage" aria-label="My Page">
-			<Icon name="user" />
-		</a>
-	</div>
-</nav>
+	</nav>
+</div>
 
 <MobileMenu />
 
 <style>
 	nav {
-		position: fixed;
 		display: flex;
+		height: var(--hh-nav-height);
+		padding: 0 var(--hh-page-padding-side);
+		max-width: var(--hh-page-max-width);
+		margin: 0 auto;
+	}
+
+	a {
+		font: var(--hh-font-body);
+		color: var(--hh-fg-3);
+	}
+
+	.header {
+		position: fixed;
 		top: 0;
 		z-index: 101;
 		width: 100vw;
-		height: var(--hh-nav-height);
-		margin: 0 auto;
-		padding: 0 var(--hh-page-padding-side);
 		background-color: var(--hh-bg-2);
 		user-select: none;
 		isolation: isolate;
@@ -76,11 +87,6 @@ Top navigation bar for the application. It provides a slot for the left side, th
 			height: 4px;
 			background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), transparent);
 		}
-	}
-
-	a {
-		font: var(--hh-font-body);
-		color: var(--hh-fg-3);
 	}
 
 	.menu {
@@ -124,7 +130,7 @@ Top navigation bar for the application. It provides a slot for the left side, th
 			outline-offset: -2px;
 			font-weight: 600;
 
-			padding: 0.1rem 0.8rem 0 0.8rem;
+			padding: 0.1rem 1.6rem 0 1.6rem;
 
 			&:hover {
 				box-shadow: inset 0 -1px 0 0 var(--hh-border);
@@ -148,7 +154,7 @@ Top navigation bar for the application. It provides a slot for the left side, th
 		}
 
 		.home-link {
-			margin-right: 3.2rem;
+			margin-right: 2.4rem;
 		}
 
 		.menu {

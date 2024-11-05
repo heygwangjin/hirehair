@@ -31,15 +31,9 @@ The main shell of the application. It provides a slot for the top navigation, th
 	main {
 		position: relative;
 		margin: 0 auto;
-		padding-top: var(--hh-banner-height);
-		padding-bottom: 0;
+		padding: var(--hh-page-padding-block) var(--hh-page-padding-side);
 		height: 100%;
-	}
-
-	@media (min-width: 1024px) {
-		main {
-			padding-top: var(--hh-nav-height);
-			padding-bottom: var(--hh-banner-height);
-		}
+		max-width: var(--hh-page-max-width);
+		margin: 0 auto;
 	}
 </style>
