@@ -1,7 +1,6 @@
-@import '@fontsource/noto-serif/700.css';
 @import '@fontsource/dm-serif-display/400.css';
 @import '@fontsource/fira-sans/400.css';
 
 @import './tokens.css';
 @import './base.css';
-/* @import './text.css'; */
+@import './utils/buttons.css';
