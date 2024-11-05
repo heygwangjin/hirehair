@@ -78,7 +78,7 @@ Top navigation bar for the application. It provides a slot for the left side, th
 		display: flex;
 		align-items: center;
 		font: var(--hh-font-logo);
-		width: 3.4rem;
+		width: 10rem;
 		height: 100%;
 		text-decoration: none;
 	}
@@ -125,7 +125,7 @@ Top navigation bar for the application. It provides a slot for the left side, th
 		}
 
 		.home-link {
-			width: 13.2rem;
+			margin-right: 3.2rem;
 		}
 
 		.menu {

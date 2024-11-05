@@ -75,6 +75,6 @@
 	}
 
 	.searching {
-		border-color: var(--hh-fg-accent);
+		border: 2px solid var(--hh-fg-accent);
 	}
 </style>
