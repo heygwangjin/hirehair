@@ -11,9 +11,9 @@
 	--hp-font-family-body: 'Pretendard', 'Noto Sans KR', -apple-system, sans-serif;
 	--hp-font-family-heading: 'DM Serif Display', Georgia, serif;
 
-	--hp-font-size-h1: 3.2rem;
-	--hp-font-size-h2: 2.6rem;
-	--hp-font-size-h3: 2rem;
+	--hp-font-size-h1: 2.4rem;
+	--hp-font-size-h2: 2rem;
+	--hp-font-size-h3: 1.8rem;
 	--hp-font-size-body-large: 1.8rem;
 	--hp-font-size-body: 1.6rem;
 	--hp-font-size-body-small: 1.4rem;
@@ -43,5 +43,10 @@
 
 	&.dark {
 		-webkit-font-smoothing: antialiased;
+	}
+
+	@media screen and (min-width: 1024px) {
+		--hp-font-size-h1: 3rem;
+		--hp-font-size-h2: 2.4rem;
 	}
 }
