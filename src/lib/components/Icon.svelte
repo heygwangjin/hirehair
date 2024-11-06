@@ -26,5 +26,6 @@ use an svg icon that was provided through `Icons.svelte` from
 		stroke-linecap: round;
 		stroke-linejoin: round;
 		fill: none;
+		color: currentColor;
 	}
 </style>

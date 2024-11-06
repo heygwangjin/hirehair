@@ -21,6 +21,7 @@ Top navigation bar for the application. It provides a slot for the left side, th
 <div class="header">
 	<nav>
 		<a class="home-link" href="/" title={home_title} aria-label="HairPeople">헤어피플</a>
+		<p class="title">{title}</p>
 
 		<div class="desktop">
 			<div class="links">
@@ -87,6 +88,14 @@ Top navigation bar for the application. It provides a slot for the left side, th
 			height: 4px;
 			background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), transparent);
 		}
+	}
+
+	.title {
+		display: flex;
+		align-items: center;
+		font: var(--hp-font-body-large);
+		color: var(--hp-fg-1);
+		padding: 0 0.4rem;
 	}
 
 	.menu {
@@ -175,6 +184,10 @@ Top navigation bar for the application. It provides a slot for the left side, th
 
 		.desktop {
 			display: contents;
+		}
+
+		.title {
+			display: none;
 		}
 	}
 </style>

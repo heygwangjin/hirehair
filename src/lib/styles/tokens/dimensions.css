@@ -3,9 +3,13 @@
 	--hp-page-padding-block: 8rem;
 	--hp-page-padding-side: 1.6rem;
 	--hp-thick-border-width: 0.3rem;
-	--hp-border-radius: 0.4rem;
-	--hp-border-radius-inner: 0.2rem;
+	--hp-border-radius: 0.5rem;
+	--hp-border-radius-inner: 0.25rem;
 	--hp-page-max-width: 126rem;
-	--hp-page-content-width: 76rem;
+	--hp-footer-padding-block: 2rem;
 	--hp-banner-height: 0px;
+
+	@media screen and (min-width: 1024px) {
+		--hp-footer-padding-block: 4rem;
+	}
 }

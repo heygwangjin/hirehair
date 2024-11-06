@@ -126,5 +126,12 @@ Provides a list of svg icons that can be referenced through the `Icon` component
 			<line x1="3" y1="12" x2="3.01" y2="12" />
 			<line x1="3" y1="18" x2="3.01" y2="18" />
 		</symbol>
+
+		<symbol id="star" viewBox="-4 -4 32 32">
+			<polygon
+				xmlns="http://www.w3.org/2000/svg"
+				points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+			/>
+		</symbol>
 	</svg>
 </div>

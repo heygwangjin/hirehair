@@ -9,11 +9,13 @@ The main shell of the application. It provides a slot for the top navigation, th
 	let {
 		nav_visible = true,
 		top_nav,
-		children
+		children,
+		footer
 	}: {
 		nav_visible?: boolean;
 		top_nav?: Snippet;
 		children?: Snippet;
+		footer?: Snippet;
 	} = $props();
 </script>
 
@@ -27,13 +29,15 @@ The main shell of the application. It provides a slot for the top navigation, th
 	{@render children?.()}
 </main>
 
+{@render footer?.()}
+
 <style>
 	main {
 		position: relative;
 		margin: 0 auto;
 		padding: var(--hp-page-padding-block) var(--hp-page-padding-side);
 		height: 100%;
+		min-height: fit-content; /* Prevents the footer from sticking to the bottom */
 		max-width: var(--hp-page-max-width);
-		margin: 0 auto;
 	}
 </style>
