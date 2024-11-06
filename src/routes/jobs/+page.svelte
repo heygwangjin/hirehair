@@ -118,6 +118,7 @@
 	.card {
 		border: 1px solid #f0f0f0;
 		border-radius: var(--hp-border-radius);
+		background: var(--hp-bg-1);
 		box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 
 		&:hover {
@@ -134,7 +135,6 @@
 
 	.content {
 		padding: 1rem;
-		background-color: var(--hp-bg-1);
 	}
 
 	.title {
