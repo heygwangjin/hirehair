@@ -20,7 +20,7 @@
 	--hp-font-size-ui-small: 1.3rem;
 	--hp-font-size-ui-medium: 1.6rem;
 	--hp-font-size-ui-large: 3rem;
-	--hp-font-size-logo: 2.4rem;
+	--hp-font-size-logo: 2.8rem;
 
 	/* doing it this way (rather than just `1.5`) means it has a unit, and can be used elsewhere */
 	--hp-line-height-body-large: calc(1.5 * var(--hp-font-size-body-large));
