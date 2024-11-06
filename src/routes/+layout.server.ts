@@ -8,12 +8,17 @@ const nav_links: NavigationLink[] = [
 	{
 		title: '인재정보',
 		slug: 'seekers'
+	},
+	{
+		title: '최근 본',
+		slug: 'recently-viewed-jobs'
 	}
 ];
 
 const sections: Record<string, string> = {
 	jobs: '채용정보',
-	seekers: '인재정보'
+	seekers: '인재정보',
+	'recently-viewed-jobs': '최근 본'
 };
 
 export const load = async ({ url, fetch }) => {
