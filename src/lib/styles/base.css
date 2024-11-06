@@ -22,7 +22,6 @@ body {
 	line-height: 1.5;
 	color: var(--hp-fg-2);
 	background-color: var(--hp-bg-1);
-	width: 100%;
 	tab-size: 2;
 	-moz-tab-size: 2;
 	touch-action: pan-x pan-y;
@@ -41,20 +40,20 @@ body {
 	border-radius: var(--hp-border-radius);
 }
 
-p,
-ul,
-ol {
-	font: var(--hp-font-body);
-	margin: 0.5lh 0;
-
-	&:first-child {
-		margin-top: 0;
-	}
-
-	&:last-child {
-		margin-bottom: 0;
-	}
-}
+/* p, */
+/* ul, */
+/* ol { */
+/* 	font: var(--hp-font-body); */
+/* 	margin: 0.5lh 0; */
+/**/
+/* 	&:first-child { */
+/* 		margin-top: 0; */
+/* 	} */
+/**/
+/* 	&:last-child { */
+/* 		margin-bottom: 0; */
+/* 	} */
+/* } */
 
 li {
 	list-style: none;
@@ -100,7 +99,7 @@ pre {
 }
 
 header {
-	margin-bottom: 1rem;
+	margin-bottom: 4rem;
 }
 
 ::selection {
