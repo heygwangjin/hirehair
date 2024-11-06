@@ -2,6 +2,7 @@
 	import '$lib/styles/index.css';
 	import Shell from '$lib/components/Shell.svelte';
 	import Nav from '$lib/nav/Nav.svelte';
+	import Footer from './_home/Footer.svelte';
 
 	let { data, children: layout_children } = $props();
 </script>
@@ -20,5 +21,9 @@
 
 	{#snippet children()}
 		{@render layout_children()}
+	{/snippet}
+
+	{#snippet footer()}
+		<Footer />
 	{/snippet}
 </Shell>

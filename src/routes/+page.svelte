@@ -1,7 +1,3 @@
-<script lang="ts">
-	import Footer from './_home/Footer.svelte';
-</script>
-
 <svelte:head>
 	<title>헤어피플 | 미용사 구인 구직 사이트</title>
 
@@ -13,5 +9,4 @@
 
 <div>
 	<h1 class="visually-hidden">헤어피플</h1>
-	<Footer />
 </div>

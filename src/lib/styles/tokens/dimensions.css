@@ -6,6 +6,10 @@
 	--hp-border-radius: 0.5rem;
 	--hp-border-radius-inner: 0.25rem;
 	--hp-page-max-width: 126rem;
-	--hp-page-content-width: 76rem;
+	--hp-footer-padding-block: 2rem;
 	--hp-banner-height: 0px;
+
+	@media screen and (min-width: 1024px) {
+		--hp-footer-padding-block: 4rem;
+	}
 }
