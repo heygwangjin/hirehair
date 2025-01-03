@@ -18,7 +18,7 @@ Top navigation bar for the application. It provides a slot for the left side, th
 	let { home_title = 'Homepage', title, links }: Props = $props();
 </script>
 
-<div class="header">
+<header>
 	<nav>
 		<a class="home-link" href="/" title={home_title} aria-label="HairPeople">헤어피플</a>
 		<p class="title">{title}</p>
@@ -51,7 +51,7 @@ Top navigation bar for the application. It provides a slot for the left side, th
 			</a>
 		</div>
 	</nav>
-</div>
+</header>
 
 <MobileMenu />
 
@@ -69,7 +69,7 @@ Top navigation bar for the application. It provides a slot for the left side, th
 		color: var(--hp-fg-3);
 	}
 
-	.header {
+	header {
 		position: fixed;
 		top: 0;
 		z-index: 101;
