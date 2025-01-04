@@ -7,9 +7,22 @@
 	--hp-border-radius-inner: 0.25rem;
 	--hp-page-max-width: 126rem;
 	--hp-footer-padding-block: 2rem;
-	--hp-banner-height: 0px;
+	--hp-banner-height: 34rem;
+	--hp-banner-padding-block: 4rem;
+	--hp-banner-padding-side: 1.6rem;
+
+	@media screen and (min-width: 768px) {
+		--hp-banner-height: 39rem;
+	}
 
 	@media screen and (min-width: 1024px) {
 		--hp-footer-padding-block: 4rem;
+		--hp-banner-height: 43rem;
+	}
+
+	@media screen and (min-width: 1200px) {
+		--hp-banner-height: 47rem;
+		--hp-banner-padding-block: 4rem;
+		--hp-banner-padding-side: 6.5rem;
 	}
 }

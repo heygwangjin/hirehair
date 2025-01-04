@@ -21,6 +21,8 @@
 	--hp-font-size-ui-medium: 1.6rem;
 	--hp-font-size-ui-large: 3rem;
 	--hp-font-size-logo: 2.8rem;
+	--hp-font-size-banner-h1: 2.4rem;
+	--hp-font-size-banner-h2: 1.5rem;
 
 	/* doing it this way (rather than just `1.5`) means it has a unit, and can be used elsewhere */
 	--hp-line-height-body-large: calc(1.5 * var(--hp-font-size-body-large));
@@ -30,6 +32,8 @@
 	--hp-font-h1: 700 var(--hp-font-size-h1) / 1.2 var(--hp-font-family-body);
 	--hp-font-h2: 700 var(--hp-font-size-h2) / 1.2 var(--hp-font-family-body);
 	--hp-font-h3: 700 var(--hp-font-size-h3) / 1.2 var(--hp-font-family-body);
+	--hp-font-banner-h1: 700 var(--hp-font-size-banner-h1) / 1.4 var(--hp-font-family-body);
+	--hp-font-banner-h2: 700 var(--hp-font-size-banner-h2) / 3.6 var(--hp-font-family-body);
 	--hp-font-body-large: 400 var(--hp-font-size-body-large) / var(--hp-line-height-body-large)
 		var(--hp-font-family-body);
 	--hp-font-body: 400 var(--hp-font-size-body) / var(--hp-line-height-body)
@@ -45,8 +49,20 @@
 		-webkit-font-smoothing: antialiased;
 	}
 
+	@media screen and (min-width: 768px) {
+		--hp-font-size-banner-h1: 3.2rem;
+		--hp-font-size-banner-h2: 1.5rem;
+	}
+
 	@media screen and (min-width: 1024px) {
 		--hp-font-size-h1: 3rem;
 		--hp-font-size-h2: 2.4rem;
+		--hp-font-size-banner-h1: 3.4rem;
+		--hp-font-size-banner-h2: 1.8rem;
+	}
+
+	@media screen and (min-width: 1200px) {
+		--hp-font-size-banner-h1: 4.2rem;
+		--hp-font-size-banner-h2: 2rem;
 	}
 }
